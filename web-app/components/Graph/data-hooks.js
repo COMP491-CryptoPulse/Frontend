@@ -10,10 +10,7 @@ export const usePrices = (coinType, currentTime, minTime, maxTime, yMax) => {
     start: minTime,
     end: maxTime,
     type: coinType
-  }, [currentTime], (params) => params[0] && params[1] && params[2] && params[0] !== params[1],
-    (prices) => {
-      return prices.reverse()
-    })
+  }, [currentTime], (params) => params[0] && params[1] && params[2] && params[0] !== params[1])
   // Calculating the price scale.
   const priceScale = useMemo(() => {
     const high = max(prices, getPrice) || 0
@@ -31,11 +28,7 @@ export const usePostCounts = (coinType, currentTime, minTime, maxTime, sma, yMax
     end: maxTime,
     type: coinType,
     sma: sma
-  }, [currentTime], (params) => params[0] && params[1] && params[2] && params[3],
-      (pc) => {
-        pc.sort((a, b) => a.time - b.time)
-        return pc
-      })
+  }, [currentTime], (params) => params[0] && params[1] && params[2] && params[3])
   const streamingRealtime = useMemo(() => true, [])
   // Fetching the realtime post counts.
   const { result: aggrStreamedPostCounts, isLoading: isLoadingStreamedPosts } = useApiData([], "aggregate/streamed_post_counts", {
