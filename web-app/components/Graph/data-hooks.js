@@ -12,7 +12,6 @@ export const usePrices = (coinType, currentTime, minTime, maxTime, yMax) => {
     type: coinType
   }, [currentTime], (params) => params[0] && params[1] && params[2] && params[0] !== params[1],
     (prices) => {
-      prices.sort((a, b) => a.time - b.time)
       return prices.reverse()
     })
   // Calculating the price scale.
