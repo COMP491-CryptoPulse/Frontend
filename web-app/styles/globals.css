@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(10, 10, 10);
+}
+
+.link {
+  color: #004A81
+}
+
+.link:hover {
+  color: #046DBB;
+  text-decoration: underline;
+}
