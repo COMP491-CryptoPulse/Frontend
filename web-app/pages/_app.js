@@ -13,8 +13,8 @@ function MyApp({ Component, pageProps }) {
     <UserProvider>
       <Layout {...pageProps}>
         <Head>
-          <title>My page title</title>
-          <link rel="shortcut icon" href="/favicon.ico" />
+          <title>CryptoPulse</title>
+          <link rel="shortcut icon" href="favicon.ico" />
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
