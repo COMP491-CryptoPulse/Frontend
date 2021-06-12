@@ -113,7 +113,7 @@ export default function Profile() {
                   style={{ "border-radius": "50%" }}
                   width={64}
                   height={64}
-                  src={"profile-user.png"}
+                  src={"/app/profile-user.png"}
                 />
                 <div>{username}</div>
               </div>
