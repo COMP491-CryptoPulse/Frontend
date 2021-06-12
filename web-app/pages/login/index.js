@@ -68,9 +68,12 @@ export default function Login() {
                   <AiOutlineLoading className={`animate-spin`} />
                 : 'Log in'}
                 </button>
-                <a class="link inline-block text-right font-bold text-sm text-blue hover:text-blue-darker" href="forgot-password">
+                <Link href={`/forgot-password`}>
+                  <span className="link inline-block text-right font-bold text-sm text-blue hover:text-blue-darker">
                   Forgot Password?
-                </a>
+                  </span>
+                </Link>
+
               </div>
             </div>
           </form>
