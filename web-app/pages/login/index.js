@@ -2,6 +2,7 @@ import { useCallback, useMemo, useState } from "react";
 import { useRequireGuest, useUser } from "../../user-hook"
 import { FormInput } from "../../components/FormInput";
 import { AiOutlineLoading } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Login() {
   useRequireGuest()
