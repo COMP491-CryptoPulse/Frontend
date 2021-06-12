@@ -33,7 +33,8 @@ export default function ForgotPassword() {
 
   const onSubmit = useCallback((e) => {
     e.preventDefault()
-    const endpoint = "http://127.0.0.1:5000/user/reset_password"
+    // TODO: Use a hook!
+    const endpoint = "https://cryptopulse.in/user/reset_password"
     axios.post(endpoint, {
       password: correctPassword,
       code: router.query.code,

@@ -138,7 +138,7 @@ const change_email = useCallback((password, newEmail, onSuccess = () => {}, onEr
   // Update the notifications.
   const updateNotifications = useCallback(() => {
     fetch("info/notifications", {}, (res) => {
-      if(res.data.result == "ok") setNotifications(res.data.notifications)
+      if(res.data.result === "ok") setNotifications(res.data.notifications)
     })
   }, [cookies])
   // Set all the notifications as read and update the notifications.
