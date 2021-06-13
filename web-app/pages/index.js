@@ -74,7 +74,7 @@ export default function Home({ loggedIn }) {
           <p className="text-white text-center text-2xl mb-3">Add Triggers</p>
           <p className="border-t border-gray-600 text-center text-gray-300 p-3">
             Is social media on fire with cryptocurrency posts? Don't worry, with
-            out notification system you will be ready!
+            our notification system you will be ready!
           </p>
         </div>
       </div>
