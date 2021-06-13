@@ -25,27 +25,6 @@ export default function DashboardPage() {
   const [showPostVolume, setShowPostVolume] = useState(true);
   const [selectedSources, setSelectedSources] = useState([]);
   const [selectedPostRange, setSelectedPostRange] = useState([0, 0]);
-  const [impactMap, setImpactMap] = useState(new Map());
-
-  const calculateImpactMap = useCallback((posts) => {
-    if (posts == null || posts.size === 0) setImpactMap(new Map());
-    let newImpactMap = new Map();
-    for (const p of posts) {
-      newImpactMap.set(p.coin_type, []);
-    }
-    for (const p of posts) {
-      newImpactMap.get(p.coin_type).push(p.impact);
-    }
-    const average = (arr) => arr.reduce((p, c) => p + c, 0) / arr.length;
-    for (const p of newImpactMap.keys()) {
-      const first = average(newImpactMap.get(p).map((e) => e[0]));
-      const second = average(newImpactMap.get(p).map((e) => e[1]));
-      const third = average(newImpactMap.get(p).map((e) => e[2]));
-      const fourth = average(newImpactMap.get(p).map((e) => e[3]));
-      newImpactMap.set(p, [first, second, third, fourth]);
-    }
-    setImpactMap(newImpactMap);
-  });
 
   const handleGraphSelect = useCallback((minDate, maxDate) => {
     setSelectedPostRange([
@@ -69,7 +48,6 @@ export default function DashboardPage() {
     showPostsOption,
     showPostVolume,
     selectedPostRange,
-    impactMap,
     selectedSources,
     coinType,
   ];
@@ -242,9 +220,9 @@ export default function DashboardPage() {
             <DashboardPanel width={72}>
               <DashboardPanel.Header>Predictions</DashboardPanel.Header>
               <DashboardPanel.Body>
-                {[...impactMap.entries()].map((e) => (
-                  <Prediction prediction={e[1]} coin={e[0]} />
-                ))}
+                <Prediction
+                  selectedRange={selectedPostRange}
+                  coin={coinType} />
               </DashboardPanel.Body>
             </DashboardPanel>
           </div>

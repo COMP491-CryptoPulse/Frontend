@@ -4,7 +4,7 @@ import { Arrow, useLayer } from "react-laag"
 import { useUser } from "../user-hook"
 import { Notification } from "./Notification"
 
-const pollTime = 1000
+const pollTime = 10000
 
 export const Notifier = () => {
   const { notifications, updateNotifications, readAllNotifications, discardNotification } = useUser()

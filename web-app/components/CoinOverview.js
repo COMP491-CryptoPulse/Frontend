@@ -34,9 +34,6 @@ export const CoinOverview = ({ coin, button, singleLine = false }) => {
               <span className="mr-1">
                 <FiDollarSign />
               </span>
-              <span className={`text-xs text-${mutedTextColor} font-mono`}>
-                0.00
-              </span>
             </div>
           )}
         </div>
