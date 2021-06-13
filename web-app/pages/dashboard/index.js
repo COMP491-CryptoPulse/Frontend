@@ -209,9 +209,7 @@ export default function DashboardPage() {
                       selectedSources.length === 0 ? "all" : selectedSources
                     }
                     sortBy={sortByOption}
-                    sortOrder={sortOrderOption}
-                    onUpdate={calculateImpactMap}
-                  />
+                    sortOrder={sortOrderOption} />
                 </DashboardPanel.Body>
               </DashboardPanel>
             </div>
