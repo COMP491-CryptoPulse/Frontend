@@ -6,7 +6,7 @@ import {useApiData} from "../api-hook"
 
 export const Prediction = ({ selectedRange, coin }) => {
 
-    const average = useApiData([0.0, 0.0, 0.0, 0.0], "aggregate/post_impacts", {
+    const {results: average} = useApiData([0.0, 0.0, 0.0, 0.0], "aggregate/post_impacts", {
         start: selectedRange[0],
         end: selectedRange[1],
         type: coin
