@@ -63,7 +63,7 @@ export default function Home({ loggedIn }) {
             See Realtime Trends
           </p>
           <p className="border-t border-gray-600 text-center text-gray-300 p-3">
-            Use our state-of-the-art dashboard to never miss cryptocurreny
+            Use our state-of-the-art dashboard to never miss cryptocurrency
             market trends
           </p>
         </div>
@@ -71,16 +71,16 @@ export default function Home({ loggedIn }) {
           <AiOutlineBell className="h-14 w-14 mx-auto" />
           <p className="text-white text-center text-2xl mb-3">Add Triggers</p>
           <p className="border-t border-gray-600 text-center text-gray-300 p-3">
-            Is social media on fire with cryptocurrency posts? Don't worry! With
-            out notification system you will be ready
+            Is social media on fire with cryptocurrency posts? Don't worry, with
+            out notification system you will be ready!
           </p>
         </div>
       </div>
-      <div className="border-t border-gray-500 col-start-3 col-span-7 font-semibold mt-5 grid grid-cols-2 gap-x-10 gap-y-5">
-        <p className="col-span-2 text-center mt-5 text-3xl text-white">
+      <div className="border-t border-gray-500 col-start-3 col-span-7 font-semibold mt-5 grid grid-cols-4 gap-x-10 gap-y-5">
+        <p className="col-span-4 text-center mt-5 text-3xl text-white">
           Our Team
         </p>
-        <div className="flex flex-col bg-gray-900 items-center justify-center bg-white p-4 shadow rounded-lg">
+        <div className="flex flex-col bg-gray-900 items-center justify-center bg-white p-4 shadow rounded-lg mb-10">
           <div className="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
             <img
               className="text-center"
@@ -103,7 +103,7 @@ export default function Home({ loggedIn }) {
             </div>
           </div>
         </div>
-        <div className="flex flex-col bg-gray-900 items-center justify-center bg-white p-4 shadow rounded-lg">
+        <div className="flex flex-col bg-gray-900 items-center justify-center bg-white p-4 shadow rounded-lg mb-10">
           <div className="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
             <img
               className="text-center"
