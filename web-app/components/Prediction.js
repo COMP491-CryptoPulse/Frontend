@@ -2,6 +2,7 @@
 import {getCoinIcon, getImpactColor, getImpactIcon} from "../helpers";
 import React from "react";
 import {useApiData} from "../api-hook"
+import {AiOutlineLoading} from "react-icons/ai"
 
 
 export const Prediction = ({ selectedRange, coin }) => {
@@ -18,7 +19,9 @@ export const Prediction = ({ selectedRange, coin }) => {
               <span>{getCoinIcon(coin)}</span>
               <span className="ml-2">{coin.toUpperCase()}</span>
           </div>
-          { isLoading && average && "Calculating..." }
+          { isLoading && average &&
+            <AiOutlineLoading className="animate-spin" />
+          }
           { !isLoading && average && average.map(p => (
             <div className = {`flex flex-row text-black items-center py-1 px-3 mb-1 rounded border 
                                 border-${getImpactColor(p)}  bg-${getImpactColor(p)}`}>
