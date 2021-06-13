@@ -33,7 +33,7 @@ export default function Home({ loggedIn }) {
         <p className="col-start-2 col-end-11 mt-3 text-md text-center">
           It is hard to track every analyst that exist on social media. It is
           even harder when you have multiple coins in your wallet. Wouldn’t it
-          be nice if there is a way to keep a track your coins on social media.
+          be nice if there is a way to keep a track your coins on social media?
           There is a way now!
         </p>
         <button className=" col-start-4 col-end-9 h-12 mt-5 bg-yellow-50 hover:bg-yellow-500 text-xl text-blue-50 rounded">
@@ -71,8 +71,8 @@ export default function Home({ loggedIn }) {
           <AiOutlineBell className="h-14 w-14 mx-auto" />
           <p className="text-white text-center text-2xl mb-3">Add Triggers</p>
           <p className="border-t border-gray-600 text-center text-gray-300 p-3">
-            Social media is on fire with cryptocurrency posts? Don't worry! With
-            out notification system you always will be ready
+            Is social media on fire with cryptocurrency posts? Don't worry! With
+            out notification system you will be ready
           </p>
         </div>
       </div>
