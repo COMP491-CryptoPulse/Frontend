@@ -33,7 +33,7 @@ export default function Home({ loggedIn }) {
         <p className="col-start-2 col-end-11 mt-3 text-md text-center">
           It is hard to track every analyst that exist on social media. It is
           even harder when you have multiple coins in your wallet. Wouldn’t it
-          be nice if there is a way to keep a track your coins on social media?
+          be nice if there is a way to keep a track of your coins on social media?
           There is a way now!
         </p>
         <Link href="/signup">
@@ -48,7 +48,7 @@ export default function Home({ loggedIn }) {
           <p className="text-white text-center text-2xl mb-3">Follow Coins</p>
           <p className="border-t border-gray-600 text-center text-gray-300 p-3">
             Follow your favorite coins and track its price, relevant sources and
-            relevant posts
+            relevant posts.
           </p>
         </div>
         <div className=" mt-5 rounded-md text-white">
@@ -56,7 +56,7 @@ export default function Home({ loggedIn }) {
           <p className="text-white text-center text-2xl mb-3">Follow Sources</p>
           <p className="border-t border-gray-600 text-center text-gray-300 p-3">
             Follow your favorite sources and users and track the posts they have
-            made about the cryptocurency market
+            made about the cryptocurency market.
           </p>
         </div>
         <div className="rounded-md text-white">
@@ -66,7 +66,7 @@ export default function Home({ loggedIn }) {
           </p>
           <p className="border-t border-gray-600 text-center text-gray-300 p-3">
             Use our state-of-the-art dashboard to never miss cryptocurrency
-            market trends
+            market trends.
           </p>
         </div>
         <div className="rounded-md text-white">
