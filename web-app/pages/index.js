@@ -36,9 +36,11 @@ export default function Home({ loggedIn }) {
           be nice if there is a way to keep a track your coins on social media?
           There is a way now!
         </p>
-        <button className=" col-start-4 col-end-9 h-12 mt-5 bg-yellow-50 hover:bg-yellow-500 text-xl text-blue-50 rounded">
-          <Link href="/signup">Sign Up Now!</Link>
-        </button>
+        <Link href="/signup">
+          <button className=" col-start-4 col-end-9 h-12 mt-5 bg-yellow-50 hover:bg-yellow-500 text-xl text-blue-50 rounded">
+            Sign Up Now!
+          </button>
+        </Link>
       </div>
       <div className="border-t border-gray-500 col-start-3 col-span-7 font-semibold mt-5 grid grid-cols-2 gap-x-10 gap-y-5">
         <div className="mt-5 rounded-md">

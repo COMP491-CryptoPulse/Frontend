@@ -68,9 +68,11 @@ export default function Nav() {
           <div>
             <Link href="/login">Log In</Link>
           </div>
-          <button className="bg-yellow-50 text-blue-50 py-2 px-4 rounded">
-            <Link href="/signup">Sign Up</Link>
-          </button>
+          <Link href="/signup">
+            <button className="bg-yellow-50 hover:bg-yellow-500 text-blue-50 py-2 px-4 rounded">
+              Sign Up
+            </button>
+          </Link>
         </>
       )}
     </div>
