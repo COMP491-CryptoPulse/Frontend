@@ -29,13 +29,6 @@ export const CoinOverview = ({ coin, button, singleLine = false }) => {
               </Link>
             </span>
           </div>
-          { !singleLine && (
-            <div className={`flex flex-row items-center text-xs text-${mutedTextColor}`}>
-              <span className="mr-1">
-                <FiDollarSign />
-              </span>
-            </div>
-          )}
         </div>
       </MultipurposeCard.Middle>
       <MultipurposeCard.Right>
