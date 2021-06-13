@@ -12,6 +12,8 @@ export const Prediction = ({ selectedRange, coin }) => {
         type: coin
     }, [], (params) => params[0] !== params[1] && params[2] !== null)
 
+    console.log(average)
+
     return (selectedRange && coin &&
       <div className="flex flex-col rounded-md">
           <div className="flex flex-row items-center font-semibold text-md mb-2">
