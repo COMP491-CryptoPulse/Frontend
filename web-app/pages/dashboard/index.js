@@ -218,9 +218,11 @@ export default function DashboardPage() {
             <DashboardPanel width={72}>
               <DashboardPanel.Header>Predictions</DashboardPanel.Header>
               <DashboardPanel.Body>
+                {selectedPostRange && coinType &&
                 <Prediction
                   selectedRange={selectedPostRange}
-                  coin={coinType} />
+                  coin={coinType}/>
+                }
               </DashboardPanel.Body>
             </DashboardPanel>
           </div>

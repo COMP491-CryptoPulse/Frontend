@@ -6,11 +6,15 @@ import {useApiData} from "../api-hook"
 
 export const Prediction = ({ selectedRange, coin }) => {
 
+    console.log(selectedRange, coin)
+
     const {results: average} = useApiData([0.0, 0.0, 0.0, 0.0], "aggregate/post_impacts", {
         start: selectedRange[0],
         end: selectedRange[1],
         type: coin
     }, [], (params) => params[0] !== params[1] && params[2] !== null)
+
+    console.log(average)
 
     return (selectedRange && coin &&
       <div className="flex flex-col rounded-md">
